@@ -2,11 +2,12 @@ import styled from 'styled-components';
 
 export const Wrapper = styled.div`
     margin: 0 auto;
-    max-width: 980px;
+    width: 100%;
 `;
 
 export const Container = styled.div`
     padding: 0 10px;
+    max-width: 980px;
     margin: 0 auto;
 `;
 
