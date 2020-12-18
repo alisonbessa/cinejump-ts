@@ -6,7 +6,7 @@ const Home: React.FC = () => {
 		<Wrapper>
 			<ColumnContainer>
 					<h1>Header</h1>
-					<h1>Filmes Populared</h1>
+					<h1>Filmes Populares</h1>
 					<h1>Filmes em Cartaz</h1>
 					<h1>Filmes favoritos</h1>
 					<h1>Footer</h1>
