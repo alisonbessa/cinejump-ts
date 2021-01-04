@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 
 import { GlobalStyles } from './components/Styles/global';
 import { Wrapper } from './components/Styles/defaultComponents';
