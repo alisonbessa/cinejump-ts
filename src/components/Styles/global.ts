@@ -9,6 +9,7 @@ export const GlobalStyles = createGlobalStyle`
     }
 
     body {
+        font-family: Ubuntu, 'Open Sans', 'Helvetica Neue', sans-serif;
         -webkit-font-smoothing: antialiased;
     }
 `;
