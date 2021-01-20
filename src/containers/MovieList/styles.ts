@@ -17,11 +17,6 @@ export const ListContainer = styled.div`
     height: auto;
     overflow-y: hidden;
     overflow-x: auto;
-    scroll-snap-type: x mandatory;
-    -webkit-overflow-scrolling: touch;
-    scroll-behavior: smooth;
-    -ms-overflow-style: none;
-    scrollbar-width: 10px;
 `;
 
 export const ListContent = styled.div`
