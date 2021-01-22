@@ -21,15 +21,8 @@ const parseResponse = (rawResponse: RawResponse[]): Response[] => {
 
     rawResponse.forEach(movie => {
         const parsedMovie = {
-        overview: movie.overview,
-        genreIds: movie.genre_ids,
         id: movie.id,
-        originalTitle: movie.original_title,
-        title: movie.title,
-        popularity: movie.popularity,
         poster_path: movie.poster_path,
-        voteCount: movie.vote_count,
-        voteAverage: movie.vote_average,
         favorite: false,
     } as Response;
 
