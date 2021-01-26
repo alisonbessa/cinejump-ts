@@ -3,10 +3,9 @@ import styled from 'styled-components';
 export const Container = styled.div`
     position: relative;
     width: 165px;
-    height: 247.5px;
+    height: auto;
     border-radius: 5px;
     overflow: hidden;
-    background-color:blue;
 `;
 
 export const IconButton = styled.button`
