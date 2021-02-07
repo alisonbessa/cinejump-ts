@@ -13,10 +13,25 @@ export const Title = styled.h2`
     color: #E83F5B;
 `;
 
+export const ErrorText = styled.h3`
+    margin: 15px 30px;
+    color: #222;
+`;
+
 export const ListContainer = styled.div`
     height: auto;
     overflow-y: hidden;
-    overflow-x: auto;
+    overflow-x: scroll;
+    
+    ::-webkit-scrollbar{
+        height: 10px;
+    }
+    
+    ::-webkit-scrollbar-thumb{
+        background: #E83F5B;
+        border-radius: 10px;
+    }
+}
 `;
 
 export const ListContent = styled.div`

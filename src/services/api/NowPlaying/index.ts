@@ -24,6 +24,9 @@ const parseResponse = (rawResponse: RawResponse[]): Response[] => {
         id: movie.id,
         poster_path: movie.poster_path,
         favorite: false,
+        backdrop_path: movie.backdrop_path,
+        title: movie.title,
+        overview: movie.overview
     } as Response;
 
         response = [...response, parsedMovie];
