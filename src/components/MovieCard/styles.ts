@@ -14,6 +14,7 @@ export const IconButton = styled.button`
     top: 10px;
     background: transparent;
     border: none;
+    cursor: pointer;
     svg {
         height: 20px;
         width: 20px;

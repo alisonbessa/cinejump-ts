@@ -16,7 +16,17 @@ export const Title = styled.h2`
 export const ListContainer = styled.div`
     height: auto;
     overflow-y: hidden;
-    overflow-x: auto;
+    overflow-x: scroll;
+    
+    ::-webkit-scrollbar{
+        height: 10px;
+    }
+    
+    ::-webkit-scrollbar-thumb{
+        background: #E83F5B;
+        border-radius: 10px;
+    }
+}
 `;
 
 export const ListContent = styled.div`

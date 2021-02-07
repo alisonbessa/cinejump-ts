@@ -22,7 +22,7 @@ export const Container = styled.div`
 
 export const MainMovie = styled.div`
     position: relative;
-    width: 66%;
+    width: 65.5%;
 `;
 
 export const SideMoviesContainer = styled.div`

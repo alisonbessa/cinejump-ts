@@ -11,4 +11,4 @@ export default interface Props {
     popularity?: number;
     voteCount?: number;
     voteAverage?: number;
-}
+};
