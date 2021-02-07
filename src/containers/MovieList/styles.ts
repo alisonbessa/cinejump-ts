@@ -13,6 +13,11 @@ export const Title = styled.h2`
     color: #E83F5B;
 `;
 
+export const ErrorText = styled.h3`
+    margin: 15px 30px;
+    color: #222;
+`;
+
 export const ListContainer = styled.div`
     height: auto;
     overflow-y: hidden;

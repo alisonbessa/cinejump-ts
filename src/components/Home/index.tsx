@@ -14,6 +14,7 @@ const Home: React.FC = () => {
 	const [popularList, setPopularList] = useState([] as MovieResponse[]);
 	const [nowPlayingList, setNowPlayingList] = useState([] as MovieResponse[]);
 	const [highlightList, setHighlightList] = useState([] as MovieResponse[]);
+	const [favoriteList, setFavoriteList] = useState([] as MovieResponse[]);
 
 	const getPopular = useCallback(async () => {
 		const response = await Popular();
@@ -35,14 +36,32 @@ const Home: React.FC = () => {
 		getNowPlaying();
 	}, [getPopular, getNowPlaying]);
 
+	useEffect(() => {
+	}, [favoriteList])
+
 	return (
 		<ColumnContainer>
 			<Wrapper>
 				<Header />
 				<Highlights data={highlightList} />
-				<MovieList data={popularList} title='Populares'/>
-				<MovieList data={nowPlayingList} title='Em cartaz'/>
-				<h1>Filmes favoritos</h1>
+				<MovieList 
+					title='Populares'
+					data={popularList}
+					setFavoriteList={setFavoriteList}
+					favoriteList={favoriteList}
+				/>
+				<MovieList 
+					data={nowPlayingList}
+					title='Em cartaz'
+					setFavoriteList={setFavoriteList}
+					favoriteList={favoriteList}
+				/>
+				<MovieList 
+					data={favoriteList}
+					title='Favoritos'
+					setFavoriteList={setFavoriteList}
+					favoriteList={favoriteList}
+				/>
 				<Footer />
 			</Wrapper>
 		</ColumnContainer>
